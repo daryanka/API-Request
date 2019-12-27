@@ -37,3 +37,25 @@ html, body {
     padding: 15px;
     width: 100%;
 }
+
+.danger {
+    color: red;
+    font-style: italic;
+}
+
+.button {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    transition: ease-in-out all 250ms;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+}
