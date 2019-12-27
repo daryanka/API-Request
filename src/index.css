@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: "Lato", "Arial", sans-serif;
+    height: 100%;
+}
+
+.cont {
+    margin: auto;
+    width: 80%;
+}
+
+.title {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    margin: 40px 0;
+    background: black;
+}
+
+.input {
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
