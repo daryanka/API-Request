@@ -16,9 +16,11 @@ const App = () => {
         <p>And will rise at {"SUNSET"}</p>
       </div>
 
+      {/* JSX for input field */}
       {/*<div className={"divider"}/>*/}
       {/*<p>Enter city name</p>*/}
       {/*<input className={"input"}/>*/}
+      {/*<button className={"button"}>Get Weather</button>*/}
     </div>
   );
 }
