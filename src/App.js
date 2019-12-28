@@ -18,15 +18,20 @@ const App = () => {
     setError("");
     const apiKey = "3500b52091a4b44d88536f2eb08f5304";
     setLoading(true);
-    Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`).then(res => {
-      setState(res.data);
-      setLoading(false);
+    Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`)
+      .then(res => {
+        setState(res.data);
+        setLoading(false);
+      }).catch(err => {
+        setError("Unable to get weather information");
+        console.log(err)
+        setLoading(false);
+      });
 
-    }).catch(err => {
-      setError("Unable to get weather information");
-      console.log(err)
-      setLoading(false);
-    })
+    // Axios.post("url", data, {headers: {
+    //     "Content-Type": "multipart/form-data",
+    //     "Content-Type": "application/json",
+    //   }})
   };
 
   const displayInformation = () => {
