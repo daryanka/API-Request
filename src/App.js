@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import Axios from "axios";
+import React from "react";
 
 const App = () => {
-
-
   return (
     <div className="cont">
       <h1 className={"title"}>Weather API</h1>
 
+      {/* &#8451; */}
       <div>
+        <p>
+          The temperature is currently {"TEMP"} but feels more like {"FEELS LIKE"}
+        </p>
         <p>Currently the weather would best be described as {"DESCRIPTION"}</p>
         <p>With highs of {"HIGHS"}</p>
         <p>And lows of {"LOWS"}</p>
@@ -23,6 +24,6 @@ const App = () => {
       {/*<button className={"button"}>Get Weather</button>*/}
     </div>
   );
-}
+};
 
 export default App;
