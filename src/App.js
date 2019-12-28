@@ -1,6 +1,7 @@
 import React from "react";
 
 const App = () => {
+  // https://api.openweathermap.org/data/2.5/weather?q=
   return (
     <div className="cont">
       <h1 className={"title"}>Weather API</h1>
